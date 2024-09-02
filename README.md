@@ -13,7 +13,7 @@ After generating the graph data, the resulting .pkl file should be copied into t
 
 
 
-## Training GNN
+## Training the GNN
 ### Python environment setup with Conda
 
 ```bash
