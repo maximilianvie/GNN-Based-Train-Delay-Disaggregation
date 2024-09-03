@@ -4,17 +4,20 @@ metric_agg: argmin
 wandb:
   use: False
 dataset:
-  format: Custom 
-  name: customDataset
+  format: Custom  
+  name: customDataset 
   task: node 
-  task_type: regression 
-  transductive: False  
+  task_type: regression
+  transductive: False 
   node_encoder: False
   edge_encoder: True
   edge_encoder_name: DummyEdge
   edge_encoder_bn: False
   split: [0.8, 0.1, 0.1]
   split_mode: standard
+#pretrained:
+#  dir: pretrained/custom_simple_gatedgcn_regression
+#  reset_prediction_head: False
 train:
   pkl_filepath:  "test_dataset.pkl" 
   mode: custom 
@@ -31,9 +34,9 @@ model:
 gnn:
   head: inductive_node
   layers_pre_mp: 1
-  layers_mp: 5
+  layers_mp: 3
   layers_post_mp: 2
-  dim_inner: 15
+  dim_inner: 30
   layer_type: gatedgcnconv
   act: relu
   residual: True

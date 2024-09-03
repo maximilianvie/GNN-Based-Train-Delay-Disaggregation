@@ -9,10 +9,15 @@ dataset:
   task: node 
   task_type: classification 
   transductive: False  
+  node_encoder: False
+  edge_encoder: True
   edge_encoder_name: DummyEdge
   edge_encoder_bn: False
   split: [0.8, 0.1, 0.1]
   split_mode: standard
+#pretrained:
+#  dir: pretrained/custom_simple_gatedgcn_classification
+#  reset_prediction_head: False
 train:
   pkl_filepath:  "test_dataset.pkl" 
   mode: custom 

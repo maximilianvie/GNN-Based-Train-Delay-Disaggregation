@@ -20,7 +20,7 @@ pretrained:
   reset_prediction_head: False
 train:
   pkl_filepath:  "test_data.pkl" 
-  mode: inference-only #
+  mode: inference-only 
   batch_size: 1
   eval_period: 1
   ckpt_period: 10
@@ -34,9 +34,9 @@ model:
 gnn:
   head: inductive_node
   layers_pre_mp: 1
-  layers_mp: 5
+  layers_mp: 3
   layers_post_mp: 2
-  dim_inner: 40
+  dim_inner: 30
   layer_type: gatedgcnconv
   act: relu
   residual: True

@@ -7,7 +7,7 @@ dataset:
   format: Custom  
   name: customDataset 
   task: node 
-  task_type: classification
+  task_type: classification 
   transductive: False  
   node_encoder: False
   edge_encoder: True
